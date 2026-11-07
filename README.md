@@ -1,4 +1,4 @@
-# Roget's Thesaurus (1911) — Self-Hosted Interface
+# Rogetta 
 
 A single-file, zero-dependency web interface to **Roget's Thesaurus of English Words and Phrases** (1911 edition, Peter Mark Roget), as digitised by [Project Gutenberg](https://www.gutenberg.org/ebooks/10681). The full 1,000-entry corpus is embedded directly in `index.html` — no build step, no server-side code, no database, no network calls. Open the file in a browser and it works.
 
