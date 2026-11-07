@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roget's Thesaurus</title>
+<style>
+:root{
+  --bg:#f7f4ec; --paper:#fffdf7; --ink:#1f1c17; --muted:#6f685c; --rule:#ddd5c4;
+  --accent:#8a2f1d; --mark:#f6dd8a; --tag:#7a7366; --link:#2f5d7c; --obs:#9a9384;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16140f; --paper:#1e1b15; --ink:#ebe5d8; --muted:#a39b8b; --rule:#3a352b;
+    --accent:#e08a6d; --mark:#6b5a1c; --tag:#9d9483; --link:#8cbbd9; --obs:#7c7568;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16140f; --paper:#1e1b15; --ink:#ebe5d8; --muted:#a39b8b; --rule:#3a352b;
+  --accent:#e08a6d; --mark:#6b5a1c; --tag:#9d9483; --link:#8cbbd9; --obs:#7c7568;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--rule)}
+.bar{max-width:980px;margin:0 auto;padding:14px 16px 10px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+h1{font-size:19px;margin:0;font-weight:600;letter-spacing:.02em;white-space:nowrap}
+h1 a{color:inherit;text-decoration:none}
+h1 small{font-weight:400;color:var(--muted)}
+#q{flex:1 1 280px;min-width:0;font:inherit;font-size:19px;padding:7px 11px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink)}
+#q:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.opts{display:flex;gap:14px;font-size:14px;color:var(--muted);flex-wrap:wrap;align-items:center}
+.opts label{cursor:pointer;user-select:none;white-space:nowrap}
+main{max-width:980px;margin:0 auto;padding:14px 16px 80px}
+.status{color:var(--muted);font-size:15px;margin:2px 0 10px}
+.jump{font-size:14.5px;line-height:1.9;margin:0 0 18px;color:var(--muted)}
+.jump a{color:var(--link);text-decoration:none;margin-right:12px;white-space:nowrap}
+.jump a:hover{text-decoration:underline}
+article{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:14px 18px 12px;margin:0 0 14px;scroll-margin-top:110px}
+.eh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.num{font-variant-numeric:tabular-nums;color:var(--accent);font-weight:600;text-decoration:none}
+.head{font-size:21px;font-weight:600}
+.gloss{color:var(--muted);font-style:italic}
+.opp{font-size:14px;color:var(--muted)}
+.path{font-size:13px;color:var(--muted);margin:2px 0 8px;letter-spacing:.01em}
+.path span+span:before{content:" › "}
+.pos{margin:6px 0 0;padding-left:2.8em;position:relative}
+.pt{position:absolute;left:0;top:.15em;font-weight:600;color:var(--accent);font-size:14px;font-family:system-ui,sans-serif}
+.sense{margin:1px 0}
+.sense+.sense{padding-left:1.2em}
+mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
+.dag{color:var(--obs);font-size:.8em}
+.obs{color:var(--obs)}
+body.hideobs .obs{display:none}
+.tag{font-size:.78em;color:var(--tag);font-family:system-ui,sans-serif}
+.note{color:var(--muted);font-style:italic}
+a.x{color:var(--link);text-decoration:none;border-bottom:1px dotted var(--link)}
+a.x:hover{border-bottom-style:solid}
+.more{font:13px system-ui,sans-serif;color:var(--link);background:none;border:0;padding:6px 0 0;cursor:pointer}
+.nav{display:flex;justify-content:space-between;gap:12px;font-size:15px;margin:4px 0 14px}
+.nav a{color:var(--link);text-decoration:none}
+.help{color:var(--muted);font-size:15px;max-width:640px}
+.help kbd{font:13px system-ui,sans-serif;border:1px solid var(--rule);border-radius:3px;padding:0 4px}
+#theme{font:13px system-ui,sans-serif;background:none;border:1px solid var(--rule);border-radius:4px;color:var(--muted);padding:2px 7px;cursor:pointer}
+@media (max-width:600px){ body{font-size:16px} .pos{padding-left:0} .pt{position:static;display:block} }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <h1><a href="#" id="home">Roget's Thesaurus <small>1911</small></a></h1>
+  <input id="q" type="search" placeholder="Search a word, phrase, or entry number…" autocomplete="off" spellcheck="false" autofocus>
+  <div class="opts">
+    <label><input type="checkbox" id="partial"> partial words</label>
+    <label><input type="checkbox" id="full"> show full entries</label>
+    <label><input type="checkbox" id="hideobs"> hide obsolete (†)</label>
+    <button id="theme" type="button" title="Switch light/dark">light / dark</button>
+  </div>
+</div></header>
+<main id="out"></main>
+<script>
+const D=/*__DATA__*/[];
+const BYID=new Map(D.map((e,i)=>[e.id,i]));
+
+// ---------- text folding (length-preserving: one char in, one char out) ----------
+const foldCache=new Map();
+function fold(s){
+  let o='';
+  for(const c of s){
+    let f=foldCache.get(c);
+    if(f===undefined){ f=c.normalize('NFD')[0].toLowerCase(); if(f.length!==c.length) f=c; foldCache.set(c,f); }
+    o+=f;
+  }
+  return o;
+}
+for(const e of D){
+  e.fh=fold(e.h);
+  for(const g of e.pos) g.push(g[1].map(fold));   // g = [tag, senses, foldedSenses]
+}
+
+// ---------- helpers ----------
+const $=s=>document.querySelector(s);
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const reEsc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+function store(k,v){try{localStorage.setItem('roget.'+k,v)}catch(e){}}
+function load(k){try{return localStorage.getItem('roget.'+k)}catch(e){return null}}
+
+// split a sense line into items at , and ; (outside brackets; not before a digit, so "&c 197, 17" stays whole)
+function items(s){
+  const out=[]; let depth=0, start=0;
+  for(let i=0;i<s.length;i++){
+    const c=s[i];
+    if('([{'.includes(c)) depth++;
+    else if(')]}'.includes(c)) depth=Math.max(0,depth-1);
+    else if((c===','||c===';')&&depth===0&&!/^\s*\d/.test(s.slice(i+1,i+4))){
+      let j=i+1; while(s[j]===' ') j++;
+      out.push([start,j]); start=j; i=j-1;
+    }
+  }
+  if(start<s.length) out.push([start,s.length]);
+  return out;
+}
+
+function decorate(html){
+  return html
+    .replace(/&amp;c (\([^)]*\) )?((?:\d+(?:\.\d+)?[a-z]?)(?:, ?\d+(?:\.\d+)?[a-z]?)*)/g,(m,label,nums)=>
+      '&amp;c '+(label||'')+nums.replace(/\d+(?:\.\d+)?[a-z]?/g,n=>{
+        const id=n.replace(/\.\d+/,''); return BYID.has(id)?`<a class="x" href="#e=${id}">${n}</a>`:n;}))
+    .replace(/\[([A-Z][A-Za-z]{0,10}\.(?:[A-Z][A-Za-z]{0,6}\.)*)\]/g,'<span class="tag">[$1]</span>')
+    .replace(/\[([^\]<]{1,80})\]/g,'<span class="note">[$1]</span>')
+    .replace(/†/g,'<span class="dag">†</span>');
+}
+
+// render one sense line; ranges = [[a,b],...] hits in this sense
+function renderSense(s,ranges){
+  let html='';
+  for(const [a,b] of items(s)){
+    const piece=s.slice(a,b);
+    let h='', p=a;
+    for(const [x,y] of ranges){
+      if(y<=a||x>=b) continue;
+      const xx=Math.max(x,a), yy=Math.min(y,b);
+      h+=esc(s.slice(p,xx))+'<mark>'+esc(s.slice(xx,yy))+'</mark>'; p=yy;
+    }
+    h+=esc(s.slice(p,b));
+    html+=`<span class="it${piece.includes('†')?' obs':''}">${decorate(h)}</span>`;
+  }
+  return html;
+}
+
+function hits(re,f){ const r=[]; if(!re) return r; re.lastIndex=0; let m;
+  while((m=re.exec(f))){ r.push([m.index,m.index+m[0].length]); if(m[0].length===0) re.lastIndex++; } return r; }
+
+function entryHTML(e,re,full){
+  const hr=hits(re,e.fh);
+  let head=esc(e.h); if(hr.length){ head=''; let p=0; for(const [a,b] of hr){head+=esc(e.h.slice(p,a))+'<mark>'+esc(e.h.slice(a,b))+'</mark>';p=b;} head+=esc(e.h.slice(p)); }
+  let opp='';
+  if(e.o) opp='<span class="opp">opposite: '+e.o.replace(/\d+[a-z]?/g,n=>BYID.has(n)?`<a class="x" href="#e=${n}">${n}</a>`:n)+'</span>';
+  let body='', hidden=0;
+  for(const [tag,senses,fs] of e.pos){
+    let rows='';
+    senses.forEach((s,k)=>{
+      const r=hits(re,fs[k]);
+      if(full||r.length||!re) rows+=`<div class="sense">${renderSense(s,r)}</div>`; else hidden++;
+    });
+    if(rows) body+=`<div class="pos"><span class="pt">${tag}</span>${rows}</div>`;
+  }
+  const path=e.p.map(x=>`<span>${esc(x)}</span>`).join('');
+  return `<article id="a${e.id}"><div class="eh"><a class="num" href="#e=${e.id}">${e.id}</a><span class="head">${head}</span>${e.g?`<span class="gloss">${decorate(esc(e.g))}</span>`:''}${opp}</div>
+<div class="path">${path}</div>${body}${hidden?`<button class="more" data-id="${e.id}">show full entry (${hidden} more line${hidden>1?'s':''})</button>`:''}</article>`;
+}
+
+// ---------- search ----------
+function makeRe(q){
+  const f=reEsc(fold(q.trim()).replace(/\s+/g,' ')).replace(/ /g,'\\s+');
+  if(!f) return null;
+  return $('#partial').checked ? new RegExp(f,'gu') : new RegExp('(?<![\\p{L}\\p{N}])'+f+'(?![\\p{L}\\p{N}])','gu');
+}
+
+let lastRe=null;
+function search(q){
+  const out=$('#out');
+  q=q.trim();
+  if(!q){ out.innerHTML=helpHTML(); return; }
+  const n=q.replace(/^#/,'');
+  if(BYID.has(n)){ showEntry(n); return; }
+  const re=makeRe(q); lastRe=re;
+  const headHits=[], bodyHits=[];
+  for(const e of D){
+    if(hits(re,e.fh).length){ headHits.push(e); continue; }
+    if(e.pos.some(g=>g[2].some(f=>{re.lastIndex=0;return re.test(f)}))) bodyHits.push(e);
+  }
+  const res=headHits.concat(bodyHits);
+  const full=$('#full').checked;
+  let html=`<div class="status">${res.length} entr${res.length===1?'y contains':'ies contain'} “${esc(q)}”${headHits.length&&bodyHits.length?` · ${headHits.length} headword match${headHits.length>1?'es':''} listed first`:''}</div>`;
+  if(res.length>3) html+='<div class="jump">'+res.map(e=>`<a href="#a${e.id}" data-scroll="${e.id}">${e.id} ${esc(e.h)}</a>`).join('')+'</div>';
+  if(!res.length && !$('#partial').checked) html+='<div class="help">No whole-word matches. Try ticking <em>partial words</em>.</div>';
+  html+=res.map(e=>entryHTML(e,re,full)).join('');
+  out.innerHTML=html;
+  document.title=`${q} — Roget`;
+}
+
+function showEntry(id){
+  const i=BYID.get(id), e=D[i];
+  const prev=D[i-1], next=D[i+1];
+  const nav=`<div class="nav"><span>${prev?`<a href="#e=${prev.id}">← ${prev.id} ${esc(prev.h)}</a>`:''}</span><span>${next?`<a href="#e=${next.id}">${next.id} ${esc(next.h)} →</a>`:''}</span></div>`;
+  $('#out').innerHTML=nav+entryHTML(e,null,true)+nav;
+  document.title=`${e.id}. ${e.h} — Roget`;
+  window.scrollTo(0,0);
+}
+
+function helpHTML(){
+  document.title="Roget's Thesaurus";
+  return `<div class="help"><p>Type a word or phrase to list every entry that contains it, with the matching lines shown and highlighted. Entries whose headword matches come first; the rest follow in Roget's order.</p>
+<p>Type an entry number (e.g. <kbd>494</kbd>) to open that entry, then step to its neighbours. Underlined numbers are Roget's cross-references (<em>&amp;c</em>) and can be clicked. <kbd>Alt</kbd>+click any word or phrase in an entry to search for it. <kbd>/</kbd> jumps back to the search box; <kbd>Esc</kbd> clears it. Accents are ignored (<em>naive</em> finds <em>naïve</em>). Words marked † are obsolete.</p>
+<p>${D.length} entries loaded.</p></div>`;
+}
+
+// ---------- routing: #q=word or #e=123 ----------
+let typing=false;
+function route(){
+  const h=decodeURIComponent(location.hash.slice(1));
+  if(h.startsWith('e=')){ const id=h.slice(2); if(BYID.has(id)){ if(!typing) $('#q').value=''; showEntry(id); return; } }
+  if(h.startsWith('a')&&BYID.has(h.slice(1))) return;   // in-page jump anchor
+  const q=h.startsWith('q=')?h.slice(2):'';
+  if(!typing) $('#q').value=q;
+  search(q);
+}
+window.addEventListener('hashchange',route);
+
+let timer;
+$('#q').addEventListener('input',()=>{
+  clearTimeout(timer);
+  timer=setTimeout(()=>{ typing=true; const v=$('#q').value.trim();
+    history.replaceState(null,'',v?'#q='+encodeURIComponent(v):location.pathname+location.search); route(); typing=false; },220);
+});
+$('#q').addEventListener('keydown',ev=>{
+  if(ev.key==='Enter'){ clearTimeout(timer); const v=$('#q').value.trim(); const h=v?'#q='+encodeURIComponent(v):'';
+    if(location.hash===h) route(); else location.hash=h; }
+  if(ev.key==='Escape'){ $('#q').value=''; location.hash=''; }
+});
+document.addEventListener('keydown',ev=>{
+  if(ev.key==='/'&&document.activeElement!==$('#q')){ ev.preventDefault(); $('#q').focus(); $('#q').select(); }
+});
+
+$('#out').addEventListener('click',ev=>{
+  const more=ev.target.closest('.more');
+  if(more){ const e=D[BYID.get(more.dataset.id)]; more.closest('article').outerHTML=entryHTML(e,lastRe,true); return; }
+  const j=ev.target.closest('[data-scroll]');
+  if(j){ ev.preventDefault(); document.getElementById('a'+j.dataset.scroll).scrollIntoView({behavior:'smooth',block:'start'}); return; }
+  const it=ev.target.closest('.it');
+  if(it&&ev.altKey&&!ev.target.closest('a')){
+    ev.preventDefault();
+    const t=it.textContent.replace(/†/g,'').replace(/&c.*$/,'').replace(/\[[^\]]*\]|\([^)]*\)/g,'').replace(/[,;.]\s*$/,'').replace(/\s+/g,' ').trim();
+    if(t) location.hash='q='+encodeURIComponent(t);
+  }
+});
+
+for(const id of ['partial','full']){
+  const el=$('#'+id); el.checked=load(id)==='1';
+  el.addEventListener('change',()=>{ store(id,el.checked?'1':'0'); route(); });
+}
+const ho=$('#hideobs'); ho.checked=load('hideobs')==='1'; document.body.classList.toggle('hideobs',ho.checked);
+ho.addEventListener('change',()=>{ store('hideobs',ho.checked?'1':'0'); document.body.classList.toggle('hideobs',ho.checked); });
+const th=load('theme'); if(th) document.documentElement.dataset.theme=th;
+$('#theme').addEventListener('click',()=>{
+  const dark=getComputedStyle(document.documentElement).getPropertyValue('--bg').trim()==='#16140f';
+  const t=dark?'light':'dark'; document.documentElement.dataset.theme=t; store('theme',t);
+});
+route();
+</script>
+</body>
+</html>

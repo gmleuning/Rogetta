@@ -1,4 +1,6 @@
-# Rogetta 
+# Rogetta
+
+**Use it online: https://gmleuning.github.io/Rogetta/**
 
 A single-file, zero-dependency web interface to **Roget's Thesaurus of English Words and Phrases** (1911 edition, Peter Mark Roget), as digitised by [Project Gutenberg](https://www.gutenberg.org/ebooks/10681). The full 1,000-entry corpus is embedded directly in `index.html` — no build step, no server-side code, no database, no network calls. Open the file in a browser and it works.
 
@@ -20,6 +22,8 @@ A single-file, zero-dependency web interface to **Roget's Thesaurus of English W
 |---|---|
 | `index.html` | The entire application — markup, styles, data, and logic in one file. |
 | `rogets1911.txt` | The source text (Project Gutenberg eBook #10681). Reference only; the interface does not read it at runtime. |
+| `build_roget.py` | Rebuilds `index.html` from the source text: `python build_roget.py rogets1911.txt index.html` |
+| `template.html` | The page's markup, styles and script; `build_roget.py` fills in the data. |
 
 `index.html` is self-contained. The corpus is embedded as a JavaScript array literal (`const D = [...]`), and all styling and behaviour live in `<style>` and `<script>` blocks. Copy it anywhere and it runs.
 
@@ -47,11 +51,11 @@ Chrome's omnibox supports **custom search engines** — keyword shortcuts that s
    |---|---|
    | **Search engine** | `Roget` (any name you'll recognise in the list) |
    | **Shortcut** | `rog` (or any keyword without spaces; must not clash with an existing one) |
-   | **URL** | `https://your-host.example/index.html#q=%s` |
+   | **URL** | `https://gmleuning.github.io/Rogetta/#q=%s` |
 
 4. Click **Save**.
 
-Replace `https://your-host.example/index.html` with wherever you host the file — a GitHub Pages URL, a LAN address, or a `file:///` path if you run it locally.
+If you host your own copy, use its address instead — another GitHub Pages URL, a LAN address, or a `file:///` path to `index.html` if you run it locally.
 
 ### Use
 
