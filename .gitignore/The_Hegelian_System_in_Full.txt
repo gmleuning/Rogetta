@@ -1,0 +1,1056 @@
+一. Logic
+├── 1. Doctrine of Being
+│   ├── i. Determinateness (Quality)
+│   │   ├── α. Being
+│   │   │   ├── a. Pure Being
+│   │   │   ├── b. Pure Nothing
+│   │   │   └── c. Becoming
+│   │   │       ├── i. Unity of Being and Nothing
+│   │   │       ├── ii. Moments of Becoming: Coming-to-Be and Ceasing-to-Be
+│   │   │       └── iii. Sublation of Becoming
+│   │   ├── β. Determinate Being
+│   │   │   ├── a. Determinate Being as Such
+│   │   │   │   ├── i. Determinate Being in General
+│   │   │   │   ├── ii. Quality
+│   │   │   │   └── iii. Something
+│   │   │   ├── b. Finitude
+│   │   │   │   ├── i. Something and Other
+│   │   │   │   ├── ii. Determination, Constitution, and Limit
+│   │   │   │   └── iii. Finitude as Such
+│   │   │   │       ├── 1. The Immediacy of Finitude
+│   │   │   │       ├── 2. Limitation and the Ought
+│   │   │   │       └── 3. Transition of the Finite into the Infinite
+│   │   │   └── c. Infinity
+│   │   │       ├── i. The Infinite in General
+│   │   │       ├── ii. Alternating Determination of the Finite and the Infinite
+│   │   │       └── iii. Affirmative Infinity
+│   │   └── γ. Being-for-Self
+│   │       ├── a. Being-for-Self as Such
+│   │       │   ├── i. Determinate Being and Being-for-Self
+│   │       │   ├── ii. Being-for-One
+│   │       │   └── iii. The One
+│   │       ├── b. The One and the Many
+│   │       │   ├── i. The One in Its Own Self
+│   │       │   ├── ii. The One and the Void
+│   │       │   └── iii. Many Ones (Repulsion)
+│   │       └── c. Repulsion and Attraction
+│   │           ├── i. Exclusion of the One
+│   │           ├── ii. The One One of Attraction
+│   │           └── iii. The Relation of Repulsion and Attraction
+│   ├── ii. Magnitude (Quantity)
+│   │   ├── α. Quantity
+│   │   │   ├── a. Pure Quantity
+│   │   │   ├── b. Continuous and Discrete Magnitude
+│   │   │   └── c. Limitation of Quantity
+│   │   ├── β. Quantum
+│   │   │   ├── a. Number
+│   │   │   ├── b. Extensive and Intensive Quantum (Degree)
+│   │   │   │   ├── i. Their Difference
+│   │   │   │   ├── ii. Identity of Extensive and Intensive Magnitude
+│   │   │   │   └── iii. Alteration of Quantum
+│   │   │   └── c. Quantitative Infinity
+│   │   │       ├── i. Its Concept
+│   │   │       ├── ii. The Quantitative Infinite Progress
+│   │   │       └── iii. The Infinity of Quantum
+│   │   └── γ. Quantitative Ratio
+│   │       ├── a. Direct Ratio
+│   │       ├── b. Inverse Ratio
+│   │       └── c. Ratio of Powers
+│   └── iii. Measure
+│       ├── α. Specific Quantity
+│       │   ├── a. The Specific Quantum
+│       │   ├── b. Specifying Measure
+│       │   │   ├── i. The Rule
+│       │   │   ├── ii. Specifying Measure Proper
+│       │   │   └── iii. Relation of the Two Sides as Qualities
+│       │   └── c. Being-for-Self in Measure
+│       ├── β. Real Measure
+│       │   ├── a. The Relation of Self-Subsistent Measures
+│       │   │   ├── i. Combination of Two Measures
+│       │   │   ├── ii. Measure as a Series of Measure Relations
+│       │   │   └── iii. Elective Affinity of Measures
+│       │   ├── b. Nodal Line of Measure Relations
+│       │   └── c. The Measureless
+│       └── γ. The Becoming of Essence
+│           ├── a. Absolute Indifference
+│           ├── b. Indifference as Inverse Ratio of Its Factors
+│           └── c. Transition into Essence
+├── 2. Doctrine of Essence
+│   ├── i. Essence as Reflection Within Itself
+│   │   ├── α. Shine (Illusory Being)
+│   │   │   ├── a. The Essential and the Unessential
+│   │   │   ├── b. Shine Proper
+│   │   │   └── c. Reflection
+│   │   │       ├── i. Positing Reflection
+│   │   │       ├── ii. External Reflection
+│   │   │       └── iii. Determining Reflection
+│   │   ├── β. Determinations of Reflection
+│   │   │   ├── a. Identity
+│   │   │   ├── b. Difference
+│   │   │   │   ├── i. Absolute Difference
+│   │   │   │   ├── ii. Diversity
+│   │   │   │   └── iii. Opposition
+│   │   │   └── c. Contradiction
+│   │   └── γ. Ground
+│   │       ├── a. Absolute Ground
+│   │       │   ├── i. Form and Essence
+│   │       │   ├── ii. Form and Matter
+│   │       │   └── iii. Form and Content
+│   │       ├── b. Determinate Ground
+│   │       │   ├── i. Formal Ground
+│   │       │   ├── ii. Real Ground
+│   │       │   └── iii. The Complete Ground
+│   │       └── c. Condition
+│   │           ├── i. The Relatively Unconditioned
+│   │           ├── ii. The Absolutely Unconditioned
+│   │           └── iii. Emergence of the Fact (Sache) into Existence
+│   ├── ii. Appearance
+│   │   ├── α. Existence
+│   │   │   ├── a. The Thing and Its Properties
+│   │   │   │   ├── i. Thing-in-Itself and Existence
+│   │   │   │   ├── ii. Property of the Thing
+│   │   │   │   └── iii. Reciprocal Action of Things
+│   │   │   ├── b. The Constitution of the Thing out of Matters
+│   │   │   └── c. Dissolution of the Thing
+│   │   ├── β. Appearance Proper
+│   │   │   ├── a. The Law of Appearance
+│   │   │   ├── b. The World of Appearance and the World-in-Itself
+│   │   │   └── c. Dissolution of Appearance
+│   │   └── γ. Essential Relation
+│   │       ├── a. Relation of Whole and Parts
+│   │       ├── b. Relation of Force and Its Expression
+│   │       │   ├── i. Conditionedness of Force
+│   │       │   ├── ii. Solicitation of Force
+│   │       │   └── iii. Infinity of Force
+│   │       └── c. Relation of Outer and Inner
+│   └── iii. Actuality
+│       ├── α. The Absolute
+│       │   ├── a. Exposition of the Absolute
+│       │   ├── b. The Absolute Attribute
+│       │   └── c. The Mode of the Absolute
+│       ├── β. Modal Actuality
+│       │   ├── a. Contingency (Formal Actuality, Possibility, and Necessity)
+│       │   ├── b. Relative Necessity (Real Actuality, Possibility, and Necessity)
+│       │   └── c. Absolute Necessity
+│       └── γ. Absolute Relation
+│           ├── a. Relation of Substantiality
+│           ├── b. Relation of Causality
+│           │   ├── i. Formal Causality
+│           │   ├── ii. The Determinate Relation of Causality
+│           │   └── iii. Action and Reaction
+│           └── c. Reciprocity
+└── 3. Doctrine of the Concept
+    ├── i. Subjectivity
+    │   ├── α. The Concept as Such
+    │   │   ├── a. The Universal Concept
+    │   │   ├── b. The Particular Concept
+    │   │   └── c. The Singular Concept
+    │   ├── β. Judgment [Tetrad]
+    │   │   ├── a. Judgment of Existence (Qualitative Judgment)
+    │   │   │   ├── i. Positive Judgment
+    │   │   │   ├── ii. Negative Judgment
+    │   │   │   └── iii. Infinite Judgment
+    │   │   ├── b. Judgment of Reflection
+    │   │   │   ├── i. Singular Judgment
+    │   │   │   ├── ii. Particular Judgment
+    │   │   │   └── iii. Universal Judgment
+    │   │   ├── c. Judgment of Necessity
+    │   │   │   ├── i. Categorical Judgment
+    │   │   │   ├── ii. Hypothetical Judgment
+    │   │   │   └── iii. Disjunctive Judgment
+    │   │   └── d. Judgment of the Concept
+    │   │       ├── i. Assertoric Judgment
+    │   │       ├── ii. Problematic Judgment
+    │   │       └── iii. Apodictic Judgment
+    │   └── γ. Syllogism
+    │       ├── a. Syllogism of Existence (Qualitative Syllogism) [Tetrad]
+    │       │   ├── i. First Figure
+    │       │   ├── ii. Second Figure
+    │       │   ├── iii. Third Figure
+    │       │   └── iv. Fourth (Mathematical) Figure
+    │       ├── b. Syllogism of Reflection
+    │       │   ├── i. Syllogism of Allness
+    │       │   ├── ii. Syllogism of Induction
+    │       │   └── iii. Syllogism of Analogy
+    │       └── c. Syllogism of Necessity
+    │           ├── i. Categorical Syllogism
+    │           ├── ii. Hypothetical Syllogism
+    │           └── iii. Disjunctive Syllogism
+    ├── ii. Objectivity
+    │   ├── α. Mechanism
+    │   │   ├── a. The Mechanical Object
+    │   │   ├── b. The Mechanical Process
+    │   │   │   ├── i. The Formal Mechanical Process
+    │   │   │   ├── ii. The Real Mechanical Process
+    │   │   │   └── iii. The Product of the Mechanical Process
+    │   │   └── c. Absolute Mechanism
+    │   │       ├── i. The Centre
+    │   │       ├── ii. Law
+    │   │       └── iii. Transition of Mechanism
+    │   ├── β. Chemism
+    │   │   ├── a. The Chemical Object
+    │   │   ├── b. The Chemical Process
+    │   │   └── c. Transition of Chemism
+    │   └── γ. Teleology
+    │       ├── a. The Subjective End
+    │       ├── b. The Means
+    │       └── c. The Realized End
+    └── iii. Idea
+        ├── α. Life
+        │   ├── a. The Living Individual
+        │   ├── b. The Life Process
+        │   └── c. The Genus
+        ├── β. The Idea of Cognition
+        │   ├── a. The Idea of the True
+        │   │   ├── i. Analytic Cognition
+        │   │   └── ii. Synthetic Cognition
+        │   │       ├── 1. Definition
+        │   │       ├── 2. Division
+        │   │       └── 3. Theorem
+        │   └── b. The Idea of the Good
+        └── γ. The Absolute Idea
+            ├── a. Beginning
+            ├── b. Advance
+            └── c. End
+二. Nature
+├── 1. Mechanics
+│   ├── i. Mathematical Mechanics (Space and Time)
+│   │   ├── α. Space
+│   │   │   ├── a. Point
+│   │   │   ├── b. Line
+│   │   │   └── c. Surface
+│   │   ├── β. Time
+│   │   │   ├── a. Present
+│   │   │   ├── b. Future
+│   │   │   └── c. Past
+│   │   └── γ. Place and Motion (Union of Space and Time)
+│   │       ├── a. Place
+│   │       ├── b. Motion
+│   │       └── c. Matter (Substrate of Place and Motion)
+│   ├── ii. Finite Mechanics (Matter and Motion)
+│   │   ├── α. Inert Matter
+│   │   ├── β. Impact
+│   │   └── γ. Fall
+│   └── iii. Absolute Mechanics (Astronomy)
+│       ├── α. Universal Gravitation
+│       ├── β. Kepler's Laws
+│       └── γ. Totality of the Solar System
+├── 2. Physics
+│   ├── i. Physics of Universal Individuality
+│   │   ├── α. Free Physical Bodies
+│   │   │   ├── a. Light
+│   │   │   ├── b. Bodies of Opposition
+│   │   │   │   ├── i. Moon
+│   │   │   │   └── ii. Comet
+│   │   │   └── c. Planet as Individual Body
+│   │   ├── β. Elements
+│   │   │   ├── a. Air
+│   │   │   ├── b. Elements of Opposition
+│   │   │   │   ├── i. Fire
+│   │   │   │   └── ii. Water
+│   │   │   └── c. Earth (Individual Element)
+│   │   └── γ. Meteorological Process
+│   │       ├── a. Universal Solar Relation
+│   │       ├── b. Particular Climates
+│   │       └── c. Fertile Individuality
+│   ├── ii. Physics of Particular Individuality [Tetrad]
+│   │   ├── α. Specific Gravity
+│   │   ├── β. Cohesion
+│   │   │   ├── a. Adhesion
+│   │   │   ├── b. Coherence
+│   │   │   │   ├── i. Quantitative Coherence
+│   │   │   │   └── ii. Qualitative Coherence
+│   │   │   └── c. Elasticity
+│   │   ├── γ. Sound
+│   │   └── δ. Heat
+│   └── iii. Physics of Total Individuality
+│       ├── α. Shape
+│       │   ├── a. Shapelessness
+│       │   ├── b. Magnetism
+│       │   └── c. The Crystal
+│       ├── β. Properties of Bodies (Specification of the Individual Body)
+│       │   ├── a. Relation to Light
+│       │   │   ├── i. Transparency
+│       │   │   ├── ii. Refraction
+│       │   │   └── iii. Color
+│       │   │       ├── 1. Prismatic Color
+│       │   │       ├── 2. Vision
+│       │   │       │   ├── a. Entoptic Color
+│       │   │       │   ├── b. Epoptic Color
+│       │   │       │   └── c. Paroptic Color
+│       │   │       └── 3. Chemical Color
+│       │   ├── b. Difference in Particularized Corporeality
+│       │   │   ├── i. Smell (Specific Air)
+│       │   │   └── ii. Taste (Specific Water)
+│       │   └── c. Electricity
+│       └── γ. Chemical Process
+│           ├── a. Mixture
+│           ├── b. Real Process (Combination) [Tetrad]
+│           │   ├── i. Galvanism
+│           │   ├── ii. Fire-Process
+│           │   ├── iii. Salt Formation (Neutralization)
+│           │   └── iv. Chemical Elective Affinity
+│           └── c. Separation
+└── 3. Organics
+    ├── i. Terrestrial Organism
+    │   ├── α. History of the Earth
+    │   │   ├── a. Power of the Terrestrial Process
+    │   │   ├── b. Geognosy
+    │   │   └── c. Physical Geography
+    │   ├── β. Geology (Oryctognosy)
+    │   │   ├── a. Primitive Rocks
+    │   │   │   ├── i. Siliceousness
+    │   │   │   ├── ii. Argillaceousness
+    │   │   │   └── iii. Calcareousness
+    │   │   ├── b. Stratified (Flötz) Rocks
+    │   │   └── c. Alluvial Terrain
+    │   └── γ. Earth's Life
+    │       ├── a. Atmosphere
+    │       ├── b. Sea
+    │       └── c. Land
+    ├── ii. Plant Nature
+    │   ├── α. The Plant's Process of Formation
+    │   │   ├── a. Formation as Such
+    │   │   │   ├── i. Leaf and Root
+    │   │   │   ├── ii. Cellular Tissue and Vessels
+    │   │   │   └── iii. Saps
+    │   │   │       ├── 1. Wood Sap
+    │   │   │       ├── 2. Vital Sap
+    │   │   │       └── 3. Cambium
+    │   │   ├── b. Wood Formation
+    │   │   └── c. Bud Formation
+    │   ├── β. The Plant's Process of Assimilation
+    │   │   ├── a. The Plant's Process with Light
+    │   │   ├── b. Aerial Process
+    │   │   └── c. Aqueous Process
+    │   └── γ. The Plant's Genus Process
+    └── iii. Animal Nature
+        ├── α. The Animal's Formation (Shape) [Tetrad]
+        │   ├── a. Functions of the Organism
+        │   ├── b. Systems of Shape
+        │   │   ├── i. Nervous System
+        │   │   │   ├── 1. Osseous System
+        │   │   │   ├── 2. Nerves of Sensation and Movement
+        │   │   │   └── 3. Ganglionic System
+        │   │   ├── ii. Blood System
+        │   │   │   ├── 1. Muscular System
+        │   │   │   ├── 2. Pulmonary and Hepatic System
+        │   │   │   └── 3. Cardiac System
+        │   │   └── iii. Digestive System
+        │   ├── c. Shape as a Whole
+        │   └── d. The Animal's Process of Self-Formation
+        ├── β. The Animal's Process of Assimilation
+        │   ├── a. Theoretical Process
+        │   ├── b. Practical Process
+        │   │   ├── i. The Animal's Process with Light
+        │   │   ├── ii. Breathing, Cutaneous Process, and Thirst
+        │   │   └── iii. Digestive Process
+        │   │       ├── 1. Immediate Infection
+        │   │       ├── 2. Mediated Digestion
+        │   │       └── 3. Excretion
+        │   └── c. Formative Drive (Nisus Formativus)
+        └── γ. The Animal's Genus Process
+            ├── a. Genus and Species (Zoology)
+            │   ├── i. Worms and Mollusks
+            │   ├── ii. Insects
+            │   └── iii. Vertebrata [Tetrad]
+            │       ├── 1. Fish
+            │       ├── 2. Amphibia
+            │       ├── 3. Birds
+            │       └── 4. Mammals
+            ├── b. Sex-Relationship of Animals
+            └── c. Genus and Individual (Disease and Death)
+                ├── i. Nosology
+                ├── ii. Therapy
+                └── iii. Death of the Individual
+三. Spirit
+├── 1. Subjective Spirit
+│   ├── i. Soul (Anthropology)
+│   │   ├── α. Natural Soul
+│   │   │   ├── a. Natural Qualities
+│   │   │   │   ├── i. Universal Planetary Life
+│   │   │   │   ├── ii. Racial and National Variety
+│   │   │   │   └── iii. The Individual Subject
+│   │   │   │       ├── 1. Natural Disposition
+│   │   │   │       ├── 2. Temperament
+│   │   │   │       └── 3. Character
+│   │   │   ├── b. Natural Changes
+│   │   │   │   ├── i. The Ages of Life [Tetrad]
+│   │   │   │   │   ├── 1. Childhood
+│   │   │   │   │   ├── 2. Youth
+│   │   │   │   │   ├── 3. Maturity
+│   │   │   │   │   └── 4. Old Age
+│   │   │   │   ├── ii. Sex-Relationship of the Soul
+│   │   │   │   └── iii. Waking and Sleeping
+│   │   │   └── c. Sensation
+│   │   │       ├── i. The Senses
+│   │   │       │   ├── 1. Sight and Hearing
+│   │   │       │   ├── 2. Smell and Taste
+│   │   │       │   └── 3. Touch (Feeling)
+│   │   │       ├── ii. Sentience
+│   │   │       └── iii. Embodiment
+│   │   ├── β. The Feeling Soul
+│   │   │   ├── a. The Feeling Soul in Its Immediacy
+│   │   │   │   ├── i. Formal Subjectivity
+│   │   │   │   │   ├── 1. Dreaming
+│   │   │   │   │   ├── 2. Child in the Womb
+│   │   │   │   │   └── 3. The Individual and Its Genius
+│   │   │   │   └── ii. Magnetic Somnambulism
+│   │   │   │       ├── 1. Appearance of Magnetic States
+│   │   │   │       │   ├── a. Metal- and Water-Divining
+│   │   │   │       │   ├── b. Catalepsy and Sleepwalking
+│   │   │   │       │   └── c. Clairvoyance
+│   │   │   │       └── 2. Content of Magnetic States
+│   │   │   │           ├── a. Recollecting
+│   │   │   │           ├── b. Envisioning
+│   │   │   │           │   ├── i. Inner Vision
+│   │   │   │           │   ├── ii. External Vision
+│   │   │   │           │   └── iii. Immediate Sympathy
+│   │   │   │           └── c. Inducing
+│   │   │   │               ├── i. The Diseased State
+│   │   │   │               ├── ii. Methods and Means
+│   │   │   │               ├── iii. Effects
+│   │   │   │               ├── iv. The Magnetizer
+│   │   │   │               └── v. Healing
+│   │   │   ├── b. Self-Feeling
+│   │   │   │   ├── i. Particular Feelings
+│   │   │   │   └── ii. Derangement
+│   │   │   │       ├── 1. Vacuity
+│   │   │   │       │   ├── a. Imbecility (Cretinism, Epilepsy, Catalepsy)
+│   │   │   │       │   ├── b. Absent-Mindedness (Subjectively Aware, Objectively Insensate)
+│   │   │   │       │   └── c. Desipience (Rambling)
+│   │   │   │       ├── 2. Folly (Fixation of the Subjective as Objective)
+│   │   │   │       │   ├── a. Fixed Presentations (Monomanias)
+│   │   │   │       │   ├── b. Absurd Identifications
+│   │   │   │       │   └── c. World-Weariness (Fixation on Aversion to Life)
+│   │   │   │       └── 3. Mania
+│   │   │   └── c. Habit
+│   │   │       ├── i. Hardening against Sensation
+│   │   │       ├── ii. Indifference to Satisfaction
+│   │   │       └── iii. Dexterity
+│   │   └── γ. Actual Soul
+│   │       ├── a. Involuntary Embodiment
+│   │       ├── b. Voluntary Embodiment
+│   │       │   ├── i. Deportment
+│   │       │   ├── ii. Gesture
+│   │       │   └── iii. Physiognomy
+│   │       └── c. The I
+│   ├── ii. Phenomenology of Spirit (Consciousness)
+│   │   ├── α. Consciousness as Such
+│   │   │   ├── a. Sense-Certainty (Sensuous Consciousness)
+│   │   │   │   ├── i. Otherness
+│   │   │   │   ├── ii. Sensuousness
+│   │   │   │   │   ├── 1. Sensuous Space
+│   │   │   │   │   ├── 2. Sensuous Time
+│   │   │   │   │   └── 3. Sensuous Manifoldness
+│   │   │   │   └── iii. The Sensed Thing
+│   │   │   │       ├── 1. Externality
+│   │   │   │       ├── 2. Content of the Thing
+│   │   │   │       └── 3. Concrete Alteration
+│   │   │   ├── b. Perception (the Thing and Deception)
+│   │   │   │   ├── i. Experiences
+│   │   │   │   ├── ii. Connection
+│   │   │   │   └── iii. Demonstration, Objects, and Their Properties
+│   │   │   └── c. Force and the Understanding
+│   │   │       ├── i. Necessity
+│   │   │       ├── ii. Laws
+│   │   │       │   ├── 1. Force and the Play of Forces
+│   │   │       │   ├── 2. The Supersensible World
+│   │   │       │   └── 3. The Inverted World
+│   │   │       └── iii. Subjectivity (Transition to Self-Consciousness)
+│   │   │           ├── 1. Self-Motion
+│   │   │           ├── 2. Animation
+│   │   │           └── 3. Consciousness of Life
+│   │   ├── β. Self-Consciousness
+│   │   │   ├── a. Immediate Self-Consciousness (Desire)
+│   │   │   │   ├── i. Drive and Activity
+│   │   │   │   ├── ii. Desire and Destruction
+│   │   │   │   └── iii. Satisfaction and Identification
+│   │   │   ├── b. Recognitive Self-Consciousness
+│   │   │   │   ├── i. Struggle for Recognition
+│   │   │   │   │   ├── 1. Imperiousness
+│   │   │   │   │   ├── 2. Life and Death
+│   │   │   │   │   └── 3. Coercion and Subjection
+│   │   │   │   ├── ii. Mastery and Servitude
+│   │   │   │   │   ├── 1. Slavery
+│   │   │   │   │   ├── 2. Service
+│   │   │   │   │   └── 3. Community of Need and Provision
+│   │   │   │   └── iii. Freedom of Self-Consciousness
+│   │   │   │       ├── 1. Stoicism
+│   │   │   │       ├── 2. Skepticism
+│   │   │   │       └── 3. Unhappy Consciousness
+│   │   │   └── c. Universal Self-Consciousness
+│   │   │       ├── i. Reciprocal Recognition
+│   │   │       ├── ii. The Substance of Ethical Life (Family, Fatherland, State)
+│   │   │       └── iii. The Virtues (Love, Friendship, Valor, Honor, Fame)
+│   │   └── γ. Reason [Tetrad]
+│   │       ├── a. The Certainty and Truth of Reason [Tetrad]
+│   │       │   ├── i. Reason's Certainty of Being All Reality
+│   │       │   │   ├── 1. Certainty (Subjective Reason)
+│   │       │   │   │   ├── a. Subjective Certainty
+│   │       │   │   │   ├── b. Objective Certainty
+│   │       │   │   │   └── c. Knowledge
+│   │       │   │   ├── 2. Substantial Knowledge (Objective Reason)
+│   │       │   │   │   ├── a. Self-Certainty
+│   │       │   │   │   ├── b. Spiritual Activity
+│   │       │   │   │   └── c. Cognition
+│   │       │   │   └── 3. Spirit and Truth (Conceptual Reason)
+│   │       │   │       ├── a. Unity
+│   │       │   │       ├── b. Spiritual Certainty
+│   │       │   │       └── c. Truth
+│   │       │   ├── ii. Observing Reason
+│   │       │   │   ├── 1. Observation of Nature
+│   │       │   │   ├── 2. Observation of Self-Consciousness in Its Purity and Its Relation to External Actuality (Logical and Psychological Laws)
+│   │       │   │   └── 3. Observation of Self-Consciousness in Its Immediate Actuality
+│   │       │   │       ├── a. Physiognomic Observation
+│   │       │   │       ├── b. Phrenological Observation
+│   │       │   │       └── c. "Spirit Is a Bone" (the Infinite Judgment)
+│   │       │   ├── iii. The Actualization of Rational Self-Consciousness through Its Own Activity
+│   │       │   │   ├── 1. Pleasure and Necessity
+│   │       │   │   ├── 2. The Law of the Heart and the Frenzy of Self-Conceit
+│   │       │   │   └── 3. Virtue and the Way of the World
+│   │       │   └── iv. Individuality Real In and For Itself
+│   │       │       ├── 1. The Spiritual Animal Kingdom and Deceit, or the Matter in Hand Itself
+│   │       │       ├── 2. Reason as Lawgiver
+│   │       │       └── 3. Reason as Testing Laws
+│   │       ├── b. Spirit as a World
+│   │       │   ├── i. True Spirit: The Ethical Order
+│   │       │   │   ├── 1. The Ethical World: Human and Divine Law, Man and Woman
+│   │       │   │   │   ├── a. Nation and Family
+│   │       │   │   │   │   ├── i. Human Law
+│   │       │   │   │   │   ├── ii. Divine Law
+│   │       │   │   │   │   └── iii. The Right of the Individual (Burial of the Dead)
+│   │       │   │   │   ├── b. The Movement of the Two Laws
+│   │       │   │   │   │   ├── i. Government and War
+│   │       │   │   │   │   ├── ii. Brother and Sister
+│   │       │   │   │   │   └── iii. The Interfusion of the Two Laws
+│   │       │   │   │   └── c. The Ethical World as Self-Complete Totality
+│   │       │   │   ├── 2. Ethical Action: Human and Divine Knowledge, Guilt and Destiny
+│   │       │   │   └── 3. Legal Status
+│   │       │   ├── ii. Self-Alienated Spirit: Culture
+│   │       │   │   ├── 1. The World of Self-Alienated Spirit
+│   │       │   │   │   ├── a. Culture and Its Realm of Actuality
+│   │       │   │   │   │   ├── i. Culture as the Alienation of Natural Being
+│   │       │   │   │   │   │   ├── 1. Good and Bad: State-Power and Wealth
+│   │       │   │   │   │   │   ├── 2. Noble and Base Consciousness
+│   │       │   │   │   │   │   └── 3. Service and Counsel
+│   │       │   │   │   │   └── ii. Language as the Actuality of Culture
+│   │       │   │   │   │       ├── 1. Flattery
+│   │       │   │   │   │       ├── 2. The Language of Disruption
+│   │       │   │   │   │       └── 3. The Vanity of Culture
+│   │       │   │   │   └── b. Faith and Pure Insight
+│   │       │   │   ├── 2. Enlightenment
+│   │       │   │   │   ├── a. The Struggle of Enlightenment with Superstition
+│   │       │   │   │   └── b. The Truth of Enlightenment
+│   │       │   │   └── 3. Absolute Freedom and Terror
+│   │       │   └── iii. Spirit Certain of Itself: Morality
+│   │       │       ├── 1. The Moral Worldview
+│   │       │       ├── 2. Dissemblance
+│   │       │       └── 3. Conscience, the Beautiful Soul, Evil and Its Forgiveness
+│   │       │           ├── a. Conscience as Conviction
+│   │       │           ├── b. The Beautiful Soul
+│   │       │           └── c. Evil and Its Forgiveness
+│   │       ├── c. Religion as Spirit's Self-Consciousness
+│   │       │   ├── i. Natural Religion
+│   │       │   │   ├── 1. God as Light (the Luminous Essence)
+│   │       │   │   ├── 2. Plant and Animal
+│   │       │   │   └── 3. The Artificer
+│   │       │   ├── ii. Art-Religion
+│   │       │   │   ├── 1. The Abstract Work of Art
+│   │       │   │   │   ├── a. Statue and Temple
+│   │       │   │   │   ├── b. Hymn and Oracle
+│   │       │   │   │   └── c. Cult
+│   │       │   │   ├── 2. The Living Work of Art
+│   │       │   │   │   ├── a. The Mysteries (Bacchic Enthusiasm)
+│   │       │   │   │   └── b. The Athlete as Living Statue
+│   │       │   │   └── 3. The Spiritual Work of Art
+│   │       │   │       ├── a. Epic Art-Religion
+│   │       │   │       ├── b. Tragic Art-Religion
+│   │       │   │       └── c. Comic Art-Religion
+│   │       │   └── iii. Manifest Religion
+│   │       │       ├── 1. Spirit in Itself (the Trinity in Pure Thought)
+│   │       │       ├── 2. Spirit in Its Otherness (Creation, Evil, the Mediator)
+│   │       │       └── 3. Spirit in Its Community (Death of the Mediator, Resurrection in the Community)
+│   │       └── d. Absolute Knowing
+│   │           ├── i. The Shapes of Consciousness Recollected
+│   │           ├── ii. Science: The Concept Grasping Itself
+│   │           └── iii. Comprehended History (the Golgotha of Absolute Spirit)
+│   └── iii. Mind (Psychology)
+│       ├── α. Theoretical Mind
+│       │   ├── a. Intuition
+│       │   │   ├── i. Feeling
+│       │   │   ├── ii. Attention
+│       │   │   └── iii. Intuition Proper
+│       │   ├── b. Representation
+│       │   │   ├── i. Recollection
+│       │   │   │   ├── 1. Image
+│       │   │   │   ├── 2. The Night-Like Pit
+│       │   │   │   └── 3. Recollection Proper
+│       │   │   ├── ii. Imagination
+│       │   │   │   ├── 1. Reproductive Imagination
+│       │   │   │   ├── 2. Associative Imagination
+│       │   │   │   └── 3. Phantasy
+│       │   │   │       ├── a. Symbolizing, Allegorizing, and Poetic Phantasy
+│       │   │   │       ├── b. Sign-Making Phantasy
+│       │   │   │       └── c. Language (Speech and Writing)
+│       │   │   └── iii. Memory
+│       │   │       ├── 1. Name-Retaining Memory
+│       │   │       ├── 2. Reproductive Memory
+│       │   │       └── 3. Mechanical Memory
+│       │   └── c. Thinking
+│       │       ├── i. Understanding
+│       │       ├── ii. Judging
+│       │       └── iii. Formal Reason
+│       ├── β. Practical Mind
+│       │   ├── a. Practical Feeling
+│       │   │   ├── i. Subjective
+│       │   │   ├── ii. Intuitive
+│       │   │   └── iii. Thought
+│       │   ├── b. Drives and Choice
+│       │   │   ├── i. Passion
+│       │   │   ├── ii. Interest
+│       │   │   └── iii. Choice
+│       │   └── c. Happiness
+│       └── γ. Free Mind
+├── 2. Objective Spirit
+│   ├── i. Abstract Right
+│   │   ├── α. Property
+│   │   │   ├── a. Taking Possession
+│   │   │   ├── b. Use of the Thing
+│   │   │   └── c. Alienation of Property
+│   │   ├── β. Contract
+│   │   │   ├── a. Contractual Relation
+│   │   │   ├── b. Form of the Contract
+│   │   │   └── c. Kinds of Contract
+│   │   │       ├── i. Contract of Gift
+│   │   │       │   ├── 1. Gift Proper
+│   │   │       │   ├── 2. Gratuitous Loan
+│   │   │       │   └── 3. Gift of Service (Deposit)
+│   │   │       ├── ii. Contract of Exchange
+│   │   │       │   ├── 1. Exchange as Such
+│   │   │       │   │   ├── a. Barter
+│   │   │       │   │   └── b. Sale
+│   │   │       │   └── 2. Letting and Hiring
+│   │   │       │       ├── a. Letting of a Thing
+│   │   │       │       ├── b. Loan of Money
+│   │   │       │       └── c. Wage Contract
+│   │   │       └── iii. Contract Completed by Pledge
+│   │   │           ├── 1. Realized Value
+│   │   │           ├── 2. Mortgage
+│   │   │           └── 3. Common Will
+│   │   └── γ. Wrong
+│   │       ├── a. Unintentional Wrong
+│   │       ├── b. Fraud
+│   │       └── c. Coercion and Crime
+│   │           ├── i. Coercion
+│   │           ├── ii. Crime
+│   │           └── iii. Cancellation of Crime
+│   │               ├── 1. Justice
+│   │               ├── 2. Revenge
+│   │               └── 3. Punishment
+│   ├── ii. Morality
+│   │   ├── α. Purpose and Responsibility
+│   │   │   ├── a. Responsibility and Liability
+│   │   │   └── b. Purpose and the Right of Knowledge
+│   │   ├── β. Intention and Welfare
+│   │   │   ├── a. The Right of Intention
+│   │   │   ├── b. Self-Satisfaction and Welfare
+│   │   │   └── c. Right and Welfare
+│   │   └── γ. The Good and Conscience
+│   │       ├── a. The Good
+│   │       ├── b. The Right of Insight into the Good
+│   │       ├── c. Moral Duty
+│   │       ├── d. True Conscience
+│   │       └── e. Evil and Its Forms
+│   │           ├── i. Bad Conscience
+│   │           ├── ii. Hypocrisy
+│   │           ├── iii. Probabilism
+│   │           ├── iv. Good Intention Justifying the Means
+│   │           ├── v. Conviction
+│   │           └── vi. Irony
+│   └── iii. Ethical Life
+│       ├── α. Family
+│       │   ├── a. Marriage
+│       │   │   ├── i. The Marriage Relation
+│       │   │   ├── ii. Ceremony
+│       │   │   ├── iii. Sex Difference
+│       │   │   ├── iv. Monogamy
+│       │   │   └── v. Incest Prohibition
+│       │   ├── b. Family Resources
+│       │   │   ├── i. Property in Common
+│       │   │   └── ii. Kinship Group
+│       │   └── c. Upbringing of Children and Dissolution of the Family
+│       │       ├── i. Parental Love
+│       │       ├── ii. Upbringing of Children
+│       │       ├── iii. Divorce
+│       │       ├── iv. Emancipation of Children
+│       │       └── v. Rights of Inheritance
+│       ├── β. Civil Society
+│       │   ├── a. The System of Needs
+│       │   │   ├── i. The Kind of Need and Satisfaction
+│       │   │   ├── ii. The Kind of Work
+│       │   │   └── iii. Resources and Estates
+│       │   │       ├── 1. The Substantial (Agricultural) Estate
+│       │   │       ├── 2. The Formal (Business) Estate
+│       │   │       └── 3. The Universal Estate
+│       │   ├── b. Administration of Justice
+│       │   │   ├── i. Right as Law
+│       │   │   ├── ii. The Existence of the Law
+│       │   │   └── iii. Courts of Law
+│       │   └── c. Public Authority and Corporation
+│       │       ├── i. Public Authority (Police)
+│       │       └── ii. The Corporation
+│       └── γ. The State
+│           ├── a. Constitutional Law
+│           │   ├── i. Internal Constitution
+│           │   │   ├── 1. The Sovereign Power
+│           │   │   │   ├── a. Unity of the Sovereign
+│           │   │   │   ├── b. The Sovereign as Person and Subject
+│           │   │   │   └── c. The Sovereign as Natural Individual
+│           │   │   ├── 2. Executive Power
+│           │   │   └── 3. Legislative Power
+│           │   └── ii. External Sovereignty
+│           │       ├── 1. The Individuality of the State
+│           │       ├── 2. War
+│           │       └── 3. The Estate of Valor
+│           ├── b. International Law
+│           └── c. World History [Tetrad]
+│               ├── i. Oriental World
+│               │   ├── 1. China and Mongolia (Theocratic Despotism)
+│               │   ├── 2. India (Theocratic Aristocracy)
+│               │   └── 3. Persia (Theocratic Monarchy)
+│               │       ├── a. The Zend People
+│               │       ├── b. Assyrians, Babylonians, Medes, and Persians
+│               │       └── c. The Persian Empire and Its Parts (Syria, Judaea, Egypt)
+│               ├── ii. Greek World (Beautiful Ethical Life)
+│               │   ├── 1. The Elements of the Greek Spirit
+│               │   ├── 2. Individuality Aesthetically Conditioned
+│               │   │   ├── a. The Subjective Work of Art
+│               │   │   ├── b. The Objective Work of Art
+│               │   │   └── c. The Political Work of Art
+│               │   └── 3. Greece in History (the Persian Wars to the Macedonian Empire)
+│               ├── iii. Roman World (Abstract Legal Personhood)
+│               │   ├── 1. Rome to the Second Punic War
+│               │   ├── 2. Rome from the Second Punic War to the Emperors
+│               │   └── 3. Rome under the Emperors (Christianity, the Byzantine Empire)
+│               └── iv. Germanic World (Freedom)
+│                   ├── 1. Elements of the Christian-Germanic World
+│                   ├── 2. The Middle Ages (Feudality and Hierarchy, the Crusades, Transition to Monarchy)
+│                   └── 3. The Modern Time (Reformation, Enlightenment and Revolution)
+└── 3. Absolute Spirit
+    ├── i. Art
+    │   ├── α. The Idea of Artistic Beauty
+    │   │   ├── a. The Concept of the Beautiful as Such
+    │   │   │   ├── i. The Idea
+    │   │   │   ├── ii. The Existence of the Idea
+    │   │   │   └── iii. The Idea of the Beautiful
+    │   │   ├── b. Natural Beauty
+    │   │   │   ├── i. Natural Beauty as Such (the Idea as Life)
+    │   │   │   ├── ii. External Beauty
+    │   │   │   │   ├── 1. Beauty of Abstract Form
+    │   │   │   │   │   ├── a. Regularity and Symmetry
+    │   │   │   │   │   ├── b. Conformity to Law
+    │   │   │   │   │   └── c. Harmony
+    │   │   │   │   └── 2. Beauty as Abstract Unity of Sensuous Material (Purity)
+    │   │   │   └── iii. Deficiency of Natural Beauty
+    │   │   └── c. The Beauty of Art, or the Ideal
+    │   │       ├── i. The Ideal as Such
+    │   │       ├── ii. The Determinacy of the Ideal
+    │   │       │   ├── 1. Ideal Determinacy as Such
+    │   │       │   ├── 2. Action
+    │   │       │   │   ├── a. The General World-Situation
+    │   │       │   │   ├── b. The Situation
+    │   │       │   │   └── c. Action Proper (Universal Powers, Individuals, Character)
+    │   │       │   └── 3. External Determinacy of the Ideal
+    │   │       └── iii. The Artist
+    │   │           ├── 1. Imagination, Genius, and Inspiration
+    │   │           ├── 2. Objectivity of Representation
+    │   │           └── 3. Manner, Style, and Originality
+    │   ├── β. The Forms of Art
+    │   │   ├── a. Symbolic Art
+    │   │   │   ├── i. Unconscious Symbolism
+    │   │   │   │   ├── 1. Immediate Unity of Meaning and Shape (Zoroastrian)
+    │   │   │   │   ├── 2. Fantastic Symbolism (Indian)
+    │   │   │   │   └── 3. Symbolism Proper (Egyptian)
+    │   │   │   ├── ii. The Symbolism of the Sublime
+    │   │   │   │   ├── 1. The Pantheism of Art (Indian Poetry, Persian Poetry, Christian Mysticism)
+    │   │   │   │   └── 2. The Art of the Sublime (Hebrew Poetry)
+    │   │   │   └── iii. Conscious Symbolism of the Comparative Art-Form
+    │   │   │       ├── 1. Comparisons Starting from the External Object
+    │   │   │       │   ├── a. Fable
+    │   │   │       │   ├── b. Parable, Proverb, Apologue
+    │   │   │       │   └── c. Metamorphoses
+    │   │   │       ├── 2. Comparisons Starting from the Meaning
+    │   │   │       │   ├── a. Riddle
+    │   │   │       │   ├── b. Allegory
+    │   │   │       │   └── c. Metaphor, Image, Simile
+    │   │   │       └── 3. Disappearance of the Symbolic Art-Form
+    │   │   │           ├── a. Didactic Poetry
+    │   │   │           ├── b. Descriptive Poetry
+    │   │   │           └── c. The Ancient Epigram
+    │   │   ├── b. Classical Art
+    │   │   │   ├── i. The Process of Formation of Classical Art
+    │   │   │   │   ├── 1. Degradation of the Animal
+    │   │   │   │   ├── 2. The Battle of the Old and New Gods
+    │   │   │   │   └── 3. Positive Retention of Negated Features
+    │   │   │   ├── ii. The Ideal of Classical Art
+    │   │   │   │   ├── 1. The Classical Ideal in General
+    │   │   │   │   ├── 2. The Circle of Particular Gods
+    │   │   │   │   └── 3. The Individuality of the Particular Gods
+    │   │   │   └── iii. The Dissolution of Classical Art
+    │   │   │       ├── 1. Fate
+    │   │   │       ├── 2. Dissolution of the Gods through Anthropomorphism
+    │   │   │       └── 3. Satire
+    │   │   └── c. Romantic Art
+    │   │       ├── i. The Religious Domain of Romantic Art
+    │   │       │   ├── 1. The Redemptive History of Christ
+    │   │       │   ├── 2. Religious Love
+    │   │       │   └── 3. The Spirit of the Community (Martyrdom, Repentance and Conversion, Miracles and Legends)
+    │   │       ├── ii. Chivalry
+    │   │       │   ├── 1. Honor
+    │   │       │   ├── 2. Chivalric Love
+    │   │       │   └── 3. Fidelity
+    │   │       └── iii. The Formal Independence of Individual Characteristics
+    │   │           ├── 1. Independence of Individual Character
+    │   │           ├── 2. Adventures
+    │   │           └── 3. The Dissolution of Romantic Art (Imitation of Nature, Subjective Humor, Objective Humor)
+    │   └── γ. The System of the Individual Arts
+    │       ├── a. Architecture
+    │       │   ├── i. Symbolic Architecture
+    │       │   │   ├── 1. National Architecture
+    │       │   │   ├── 2. Sculptural Architecture
+    │       │   │   │   ├── a. Phallic Columns
+    │       │   │   │   ├── b. Obelisks
+    │       │   │   │   └── c. Egyptian Temples
+    │       │   │   └── 3. Transition to Classical Architecture
+    │       │   │       ├── a. Indian and Egyptian Subterranean Buildings
+    │       │   │       ├── b. Pyramids
+    │       │   │       └── c. Architecture of Purpose
+    │       │   ├── ii. Classical Architecture
+    │       │   │   ├── 1. General Character of Classical Architecture
+    │       │   │   │   ├── a. Subservience to Purpose
+    │       │   │   │   ├── b. Specification of Fitness for Purposes
+    │       │   │   │   └── c. The House as Fundamental Type
+    │       │   │   ├── 2. Particular Formations of Classical Architecture
+    │       │   │   │   ├── a. Form: Wood and Stone Buildings
+    │       │   │   │   ├── b. Species of Temple
+    │       │   │   │   └── c. Classical Temple as a Whole
+    │       │   │   └── 3. Styles of Classical Architecture
+    │       │   │       ├── a. Greek
+    │       │   │       │   ├── i. Doric
+    │       │   │       │   ├── ii. Ionic
+    │       │   │       │   └── iii. Corinthian
+    │       │   │       ├── b. Specification of Roman Arch and Vault
+    │       │   │       └── c. General Character of Roman Architecture
+    │       │   └── iii. Romantic Architecture
+    │       │       ├── 1. General Character of Romantic Architecture
+    │       │       ├── 2. Particular Formations of Romantic Architecture
+    │       │       │   ├── a. Form: Fully Enclosed House
+    │       │       │   └── b. Specification of Exterior and Interior
+    │       │       └── 3. Different Styles
+    │       │           ├── a. Romanesque Pre-Gothic
+    │       │           ├── b. Gothic Architecture
+    │       │           └── c. Secular Architecture
+    │       ├── b. Sculpture
+    │       │   ├── i. Principle of Sculpture
+    │       │   │   ├── 1. Essential Content of Sculpture
+    │       │   │   ├── 2. Beautiful Sculptural Form
+    │       │   │   │   ├── a. Exclusion of Particulars
+    │       │   │   │   ├── b. Exclusion of Mien
+    │       │   │   │   └── c. Substantive Individuality
+    │       │   │   └── 3. Sculpture as the Art of the Classical Ideal
+    │       │   ├── ii. The Ideal of Sculpture
+    │       │   │   ├── 1. General Character of the Ideal Sculptural Form
+    │       │   │   ├── 2. Particular Aspects of the Ideal Form
+    │       │   │   │   ├── a. Greek Profile
+    │       │   │   │   ├── b. Position and Movement of the Body
+    │       │   │   │   └── c. Draping or Clothing
+    │       │   │   └── 3. Individuality of the Ideal Sculptured Figure
+    │       │   │       ├── a. Attributes, Weapons, Adornments
+    │       │   │       ├── b. Difference of Age and Sex, Gods, Heroes, Men, and Animals
+    │       │   │       └── c. Portrayal of Individual Gods
+    │       │   └── iii. Different Kinds of Sculpture
+    │       │       ├── 1. Modes of Portrayal
+    │       │       │   ├── a. Single Statue
+    │       │       │   ├── b. Groups
+    │       │       │   └── c. Reliefs
+    │       │       ├── 2. Materials for Sculpture
+    │       │       │   ├── a. Wood
+    │       │       │   ├── b. Ivory, Gold, Bronze, Marble
+    │       │       │   └── c. Precious Stones and Glass
+    │       │       └── 3. Historical Stages in the Development of Sculpture
+    │       │           ├── a. Egyptian Sculpture
+    │       │           ├── b. Greek and Roman Sculpture
+    │       │           └── c. Christian Sculpture
+    │       └── c. Romantic Arts
+    │           ├── i. Painting
+    │           │   ├── 1. General Character of Painting
+    │           │   │   ├── a. Chief Determinant of Subject-Matter
+    │           │   │   ├── b. Sensuous Material of Painting
+    │           │   │   └── c. Principle of Artistic Treatment
+    │           │   ├── 2. Particular Characteristics of Painting
+    │           │   │   ├── a. Romantic Subject-Matter
+    │           │   │   ├── b. Characterization of the Sensuous Material of Painting
+    │           │   │   └── c. The Painter's Craft
+    │           │   │       ├── i. Conception
+    │           │   │       ├── ii. Composition
+    │           │   │       └── iii. Characterization
+    │           │   └── 3. Historical Development of Painting
+    │           │       ├── a. Byzantine Painting
+    │           │       ├── b. Italian Painting
+    │           │       └── c. Flemish and German Painting
+    │           ├── ii. Music
+    │           │   ├── 1. General Character of Music
+    │           │   │   ├── a. Comparison with Visual Arts and Poetry
+    │           │   │   ├── b. Musical Treatment of Subject-Matter
+    │           │   │   └── c. Effect of Music
+    │           │   ├── 2. Particular Characteristics of Music
+    │           │   │   ├── a. Time, Bar, Rhythm
+    │           │   │   ├── b. Musical Harmony
+    │           │   │   └── c. Melody
+    │           │   └── 3. Relation Between Expression and Content
+    │           │       ├── a. Music as Accompaniment
+    │           │       ├── b. Music Alone
+    │           │       └── c. The Execution of Musical Works of Art
+    │           └── iii. Poetry
+    │               ├── 1. Poetry as Distinct from Prose
+    │               │   ├── a. Poetic and Prosaic Treatment
+    │               │   ├── b. Poetic and Prosaic Works of Art
+    │               │   └── c. The Poet's Creative Activity
+    │               ├── 2. Poetic Expression
+    │               │   ├── a. Poetic Imagination
+    │               │   ├── b. Poetic Diction
+    │               │   └── c. Versification
+    │               │       ├── i. Rhythmic Verse
+    │               │       ├── ii. Rhyme
+    │               │       └── iii. Unification of Verse and Rhyme
+    │               └── 3. Different Genres
+    │                   ├── a. Epic Poetry
+    │                   │   ├── i. General Character of Epic
+    │                   │   ├── ii. Particular Characteristics of Epic
+    │                   │   │   ├── x. The Epic World-Situation
+    │                   │   │   ├── xx. Individual Epic Action
+    │                   │   │   └── xxx. Epic as a Fully Unified Whole
+    │                   │   └── iii. Historical Development of Epic
+    │                   │       ├── x. Oriental Epic
+    │                   │       ├── xx. Classical Epic of Greece and Rome
+    │                   │       └── xxx. Romantic Epic
+    │                   ├── b. Lyric Poetry
+    │                   │   ├── i. General Character of Lyric
+    │                   │   ├── ii. Particular Aspects of Lyric
+    │                   │   │   ├── x. The Lyric Poet
+    │                   │   │   ├── xx. Lyric Work of Art
+    │                   │   │   └── xxx. Kinds of Lyric Proper
+    │                   │   └── iii. Historical Development of Lyric
+    │                   └── c. Dramatic Poetry
+    │                       ├── i. Drama as a Poetical Work of Art
+    │                       │   ├── x. The Principle of Dramatic Poetry
+    │                       │   ├── xx. The Dramatic Work of Art
+    │                       │   └── xxx. Audience of the Dramatic Work of Art
+    │                       ├── ii. External Execution of a Dramatic Work of Art
+    │                       │   ├── x. Reading Dramas and Reciting Them
+    │                       │   ├── xx. Actor's Art
+    │                       │   └── xxx. Art of the Theater Independent of Poetry
+    │                       └── iii. Genres of Dramatic Poetry
+    │                           ├── x. Principles of the Dramatic Genres
+    │                           │   ├── 1. Tragedy
+    │                           │   ├── 2. Comedy
+    │                           │   └── 3. Drama Proper (Schauspiel)
+    │                           ├── xx. Difference Between Ancient and Modern Drama
+    │                           └── xxx. Concrete Development of Dramatic Poetry and Its Genres
+    ├── ii. Religion
+    │   ├── α. The Concept of Religion
+    │   │   ├── a. The Concept of God
+    │   │   ├── b. The Knowledge of God [Tetrad]
+    │   │   │   ├── i. Immediate Knowledge
+    │   │   │   ├── ii. Religious Feeling
+    │   │   │   ├── iii. Religious Representation
+    │   │   │   └── iv. Religious Thought
+    │   │   └── c. The Cultus
+    │   ├── β. Determinate Religion
+    │   │   ├── a. Immediate Religion, or Nature Religion [Tetrad]
+    │   │   │   ├── i. The Religion of Magic
+    │   │   │   │   ├── 1. The Concept of Magic
+    │   │   │   │   ├── 2. Less Developed Religions of Magic
+    │   │   │   │   └── 3. The State Religion of the Chinese Empire and the Dao
+    │   │   │   ├── ii. The Religion of Being-Within-Self (Buddhism, Lamaism)
+    │   │   │   ├── iii. The Hindu Religion
+    │   │   │   └── iv. The Religions of Transition
+    │   │   │       ├── 1. The Religion of Light (Persian)
+    │   │   │       ├── 2. The Religion of Pain (Syrian)
+    │   │   │       └── 3. The Religion of the Enigma (Egyptian)
+    │   │   ├── b. The Elevation of the Spiritual above the Natural
+    │   │   │   ├── i. The Religion of Beauty (Greek)
+    │   │   │   └── ii. The Religion of Sublimity (Jewish)
+    │   │   └── c. The Religion of Expediency (Roman)
+    │   └── γ. The Consummate Religion
+    │       ├── a. The Idea of God In and For Itself (the Kingdom of the Father)
+    │       ├── b. Representation and Appearance (the Kingdom of the Son)
+    │       │   ├── i. Creation and Finitude
+    │       │   ├── ii. Evil and Estrangement
+    │       │   └── iii. Reconciliation (Christ's Presence, Death, and Passage into Spirit)
+    │       └── c. Community and Spirit (the Kingdom of the Spirit)
+    │           ├── i. Origin of the Community
+    │           ├── ii. Subsistence of the Community
+    │           └── iii. Realization of the Spirituality of the Community
+    └── iii. Philosophy
+        ├── α. The Concept of Philosophy (the Three Syllogisms)
+        │   ├── a. Logic–Nature–Spirit
+        │   ├── b. Nature–Spirit–Logic
+        │   └── c. Spirit–Logic–Nature
+        ├── β. History of Philosophy [Tetrad]
+        │   ├── a. Oriental Philosophy
+        │   │   ├── i. Oriental Philosophy in General
+        │   │   ├── ii. Chinese Philosophy
+        │   │   └── iii. Indian Philosophy
+        │   │       ├── 1. Samkhya
+        │   │       ├── 2. Nyaya and Vaisheshika (Gotama and Kanada)
+        │   │       └── 3. Indian Philosophy Compared with European
+        │   ├── b. Greek Philosophy
+        │   │   ├── i. From Thales to Aristotle
+        │   │   │   ├── 1. Presocratics
+        │   │   │   ├── 2. Socratism
+        │   │   │   │   ├── a. Sophists
+        │   │   │   │   ├── b. Socrates
+        │   │   │   │   └── c. The Socratic Schools
+        │   │   │   │       ├── i. Megarics
+        │   │   │   │       ├── ii. Cyrenaics
+        │   │   │   │       └── iii. Cynics
+        │   │   │   └── 3. Great Systems
+        │   │   │       ├── a. Plato
+        │   │   │       └── b. Aristotle
+        │   │   ├── ii. Dogmatism and Skepticism
+        │   │   │   ├── 1. Stoic Philosophy
+        │   │   │   ├── 2. Epicurean Philosophy
+        │   │   │   └── 3. Skeptical Philosophy (New Academy and Pyrrhonism)
+        │   │   └── iii. Neoplatonism
+        │   │       ├── 1. General Characteristics
+        │   │       └── 2. The Philosophers
+        │   ├── c. Medieval Philosophy
+        │   │   ├── i. The Idea of Christianity
+        │   │   │   ├── 1. Church Fathers
+        │   │   │   ├── 2. Arabic Philosophy
+        │   │   │   └── 3. Scholastics
+        │   │   │       ├── a. General Character of Scholasticism
+        │   │   │       └── b. Principal Moments
+        │   │   └── ii. Renaissance and Reformation
+        │   └── d. Modern Philosophy
+        │       ├── i. Rationalism
+        │       │   ├── 1. Descartes
+        │       │   ├── 2. Spinoza
+        │       │   └── 3. Leibniz
+        │       ├── ii. Empiricism
+        │       │   ├── 1. Locke
+        │       │   ├── 2. Berkeley
+        │       │   └── 3. Hume
+        │       └── iii. Critical Philosophy (German Idealism)
+        │           ├── 1. Kant
+        │           ├── 2. Fichte
+        │           └── 3. Schelling
+        └── γ. The Hegelian System
+            ├── a. Phenomenology of Spirit (1807)
+            ├── b. Science of Logic
+            └── c. Encyclopaedia of the Philosophical Sciences
+                ├── i. Logic (一)
+                ├── ii. Nature (二)
+                └── iii. Spirit (三)
