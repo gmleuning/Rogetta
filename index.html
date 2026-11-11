@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roget's Thesaurus</title>
+<title>Rogetta</title>
 <style>
 :root{
   --bg:#f7f4ec; --paper:#fffdf7; --ink:#1f1c17; --muted:#6f685c; --rule:#ddd5c4;
@@ -67,7 +67,7 @@ a.x:hover{border-bottom-style:solid}
 </head>
 <body>
 <header><div class="bar">
-  <h1><a href="#" id="home">Roget's Thesaurus <small>1911</small></a></h1>
+  <h1><a href="#" id="home">Rogett <small>1911</small></a></h1>
   <input id="q" type="search" placeholder="Search a word, phrase, or entry number…" autocomplete="off" spellcheck="false" autofocus>
   <div class="opts">
     <label><input type="checkbox" id="partial"> partial words</label>
@@ -209,7 +209,7 @@ function showEntry(id){
 }
 
 function helpHTML(){
-  document.title="Roget's Thesaurus";
+  document.title="Rogetta";
   return `<div class="help"><p>Type a word or phrase to list every entry that contains it, with the matching lines shown and highlighted. Entries whose headword matches come first; the rest follow in Roget's order.</p>
 <p>Type an entry number (e.g. <kbd>494</kbd>) to open that entry, then step to its neighbours. Underlined numbers are Roget's cross-references (<em>&amp;c</em>) and can be clicked. <kbd>Alt</kbd>+click any word or phrase in an entry to search for it. <kbd>/</kbd> jumps back to the search box; <kbd>Esc</kbd> clears it. Accents are ignored (<em>naive</em> finds <em>naïve</em>). Words marked † are obsolete.</p>
 <p>${D.length} entries loaded.</p></div>`;
