@@ -285,7 +285,8 @@ body.quotes-open{margin-right:var(--qw)}
 #qlist .hint{color:var(--muted);font-size:15px}
 .qq{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:10px 14px;margin:0 0 10px}
 .qq .qt{white-space:pre-line;font-size:16px;line-height:1.5}
-.qq .qc{font-size:13.5px;color:var(--muted);margin-top:6px}
+.qq .qc{font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.4}
+.qq .qs{display:block}
 .qq .qa{color:var(--accent);font-weight:600}
 .qq .qd{font-style:italic}
 #qp .qf{display:flex;gap:12px;align-items:center;padding:8px 16px;border-top:1px solid var(--rule);font:13px system-ui,sans-serif;color:var(--muted)}
@@ -319,34 +320,25 @@ body.quotes-open{margin-right:var(--qw)}
   let curQ='';       // current search term
   let shown=0, found=[], curRe=null;
 
-  // ---------- parse quotations.md ----------
+  // ---------- parse quotations.md (written by clean_quotations.py) ----------
   //   ## Author
   //   *dates*
   //
-  //   quote line(s)
-  //   Source            <- last line of each blank-line-separated block
+  //   quote line(s)            <- line breaks are real (verse, paragraphs)
+  //   — citation               <- optional last line
   function parse(md){
-    const out=[]; let a='', d='', fresh=false;   // fresh: author heading seen, no quote yet
-    const looksCite=s=>s.length<90 && !/[.!?…"”’'»]$/.test(s);
-    const looksDate=s=>s.length<60 && (/^(c\. |fl\. |\d{3,4}\b)/.test(s)||/\bcentur(y|ies)\b|B\.C\.E\.$/.test(s));
+    const out=[]; let a='', d='';
     md=md.replace(/^﻿/,'').replace(/\r/g,'').replace(/\n(?=## )/g,'\n\n');   // a heading always starts a block
     for(const block of md.split(/\n\s*\n/)){
       const ls=block.split('\n').map(s=>s.trimEnd()).filter(s=>s.trim());
       while(ls.length){
-        if(ls[0].startsWith('## ')){ a=ls.shift().slice(3).trim(); d=''; fresh=true; }
-        else if(ls[0].startsWith('# ')) ls.shift();
-        else if(fresh&&!d&&/^\*[^*].*\*$/.test(ls[0])){ d=ls.shift().slice(1,-1); }
-        else if(fresh&&!d&&looksDate(ls[0])){ d=ls.shift(); }   // a few headings carry unstarred dates
+        if(ls[0].startsWith('## ')){ a=ls.shift().slice(3).trim(); d=''; }
+        else if(!d&&/^\*[^*].*\*$/.test(ls[0])) d=ls.shift().slice(1,-1);
         else break;
       }
       if(!ls.length) continue;
-      fresh=false;
-      if(ls.length===1){
-        const prev=out[out.length-1];
-        if(prev&&prev.a===a&&looksCite(ls[0])){ prev.c=prev.c?prev.c+'; '+ls[0]:ls[0]; continue; }
-        out.push({a,d,t:ls[0],c:''}); continue;
-      }
-      out.push({a,d,t:ls.slice(0,-1).join('\n'),c:ls[ls.length-1]});
+      let c=''; if(ls[ls.length-1].startsWith('— ')) c=ls.pop().slice(2);
+      if(ls.length) out.push({a,d,t:ls.join('\n'),c});
     }
     for(const q of out){ q.ft=fold(q.t); q.fc=fold(q.c); q.fa=fold(q.a); }
     return out;
@@ -375,7 +367,7 @@ body.quotes-open{margin-right:var(--qw)}
     list.innerHTML='<p class="hint">Loading quotations…</p>';
     try{
       if(/^https?:$/.test(location.protocol)){
-        const r=await fetch(QUOTE_URL); if(r.ok){ use(await r.text(),QUOTE_URL); return; }
+        const r=await fetch(QUOTE_URL,{cache:'no-cache'}); if(r.ok){ use(await r.text(),QUOTE_URL); return; }
       }
     }catch(e){}
     finally{ loading=false; }
@@ -408,7 +400,7 @@ body.quotes-open{margin-right:var(--qw)}
     for(let i=shown;i<end;i++){
       const q=found[i];
       html+='<div class="qq"><div class="qt">'+mk(q.t,q.ft,curRe)+'</div><div class="qc"><span class="qa">'+mk(q.a,q.fa,curRe)+'</span>'
-        +(q.d?' <span class="qd">('+esc(q.d)+')</span>':'')+(q.c?' · '+mk(q.c,q.fc,curRe):'')+'</div></div>';
+        +(q.d?' <span class="qd">('+esc(q.d)+')</span>':'')+(q.c?'<span class="qs">'+mk(q.c,q.fc,curRe)+'</span>':'')+'</div></div>';
     }
     shown=end;
     if(shown<found.length) html+='<button type="button" id="qmore">show more ('+(found.length-shown).toLocaleString()+' left)</button>';

@@ -24,7 +24,9 @@ A single-file, zero-dependency web interface to **Roget's Thesaurus of English W
 | `rogets1911.txt` | The source text (Project Gutenberg eBook #10681). Reference only; the interface does not read it at runtime. |
 | `build_roget.py` | Rebuilds `index.html` from the source text: `python build_roget.py rogets1911.txt index.html` |
 | `template.html` | The page's markup, styles and script; `build_roget.py` fills in the data. |
-| `quotations.md` | Quotations for the optional **quotes** panel. Fetched from beside `index.html` when the page is served over http(s); when the page is opened straight from disk, the panel asks you to pick the file once and caches it in the browser. |
+| `quotations.md` | Quotations for the optional **quotes** panel (generated; don't edit by hand). Fetched from beside `index.html` when the page is served over http(s); when the page is opened straight from disk, the panel asks you to pick the file once and caches it in the browser. |
+| `quotations_raw.md` | The quotation source as received (hard-wrapped, some quotes run together). |
+| `clean_quotations.py` | Regenerates `quotations.md` from the raw file: `python clean_quotations.py quotations_raw.md quotations.md`. Un-wraps prose, keeps verse line breaks, splits run-together quotes, and names Bible quotes by book. |
 
 `index.html` is self-contained. The corpus is embedded as a JavaScript array literal (`const D = [...]`), and all styling and behaviour live in `<style>` and `<script>` blocks. Copy it anywhere and it runs.
 
